@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xz.video.dao.VideoinfoTagRelationDao">
+
+    <resultMap id="BaseResultMap" type="com.xz.video.entity.VideoinfoTagRelationEntity">
+            <id property="id" column="id" jdbcType="CHAR"/>
+            <result property="videoId" column="video_id" jdbcType="CHAR"/>
+            <result property="tagsId" column="tags_id" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,video_id,tags_id
+    </sql>
+</mapper>

@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+.w{
+    width:100%;
+    height:80.35px;
+    position: relative;
+}
+
+li {
+    list-style: none
+}
+
+.logo {
+    position: absolute;
+    top:20px;
+    width: 174px;
+    
+}
+.logo a {
+    display: block;
+    width: 164px;
+    height: 40px;
+    background: url(../picture/logo.png) no-repeat;
+    /* font-size: 0;京东的做法*/
+    /* 淘宝的做法让文字隐藏 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.top-bar-left{
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    height: 80px;
+    width: 500px;
+}
+
+.top-bar-left ul li{
+    float: left;
+    margin-left: 30px;
+}
+.top-bar-left ul li a{
+   display: inline-block;
+   height: 80px;
+   line-height: 80px;
+   
+}
+
+
+.search {
+    position: absolute;
+    left: 500px;
+    top: 25px;
+    width: 281px;
+    height: 32px;
+    border: 1px solid rgb(108, 108, 108);
+}
+.search .search-input {
+    float: left;
+    width: 220px;
+    height: 30px;
+    padding-left: 10px;
+    border: 0; 
+    outline: none;
+}
+.search button {
+    float: left;
+    width: 58px;
+    height: 31px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.top-right{
+    position:absolute;
+    left: 900px;
+    height: 80px;
+    width: 500px;
+}
+
+.top-right ul > li{
+    float: left;
+    margin-left: 20px;
+}
+.top-right .login{
+    line-height: 80px;
+    position: absolute; 
+}
+.top-right .avatar{
+    line-height: 80px;
+    position: absolute; 
+}
+
+.top-right .avatar:hover .person{
+    display:block; 
+}
+.top-right .right-list{
+    position: absolute; 
+    left: 50px;
+    height: 80px;
+    text-align: center;
+}
+.top-right .right-list .right-item{
+    display: inline-block;
+    height: 80px;
+    width: 46px;
+    line-height: 80px;
+    color: rgb(108, 108, 108);
+}
+.top-right .upload-video{
+    position: absolute; 
+    left: 340px;
+    line-height: 80px;
+}
+.top-right ul li:first-child:hover .md{
+    display: block;
+ }
+ 
+ .top-right .md{
+     display: none;
+     position: absolute;
+     top:80px;
+     left: 30px;
+     width: 120px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+     background-color: #fff;
+ }
+ 
+ 
+ .top-right .md ul li{
+     margin-left: -20px;
+     width: 120px;
+    
+ }
+ .top-right .md ul li:hover{
+    background-color: #c6c6c6;
+ }
+ .top-right .md ul li a{
+      height: 40px; 
+      line-height: 40px;
+     
+ }
+
+.badge{
+    position: absolute;
+    
+}
+.count {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    height: 14px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
+    border-radius: 7px 7px 7px 0;
+}
+
+.person{
+    display: none;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    border: 1px solid #ccc;
+    left: -80px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+}
+.person .info{
+   margin-top: 5px;
+   height: 50px;
+}
+.person .fan {
+    height: 60px;
+}
+.person .fan ul li{
+     float: left;
+     font-size: 16px;
+}
+
+.person .personal-center{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+}
+.person .personal-center a{
+    display: inline-block;
+}
+
+.person .lougout{
+    line-height: 15px;
+    height: 15px;
+    font-size: 16px;
+}

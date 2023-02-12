@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xz.video.dao.UserThirdPartRelationDao">
+
+    <resultMap type="com.xz.video.entity.UserThirdPartRelationEntity" id="userThirdPartRelationMap">
+        <result property="id" column="id"/>
+        <result property="userId" column="user_id"/>
+        <result property="sort" column="sort"/>
+        <result property="thirdPartLoginId" column="third_part_login_id"/>
+        <result property="thirdPartUserId" column="third_part_user_id"/>
+        <result property="thirdPartUsername" column="third_part_username"/>
+        <result property="thirdPartAvatar" column="third_part_avatar"/>
+        <result property="thirdPartToken" column="third_part_token"/>
+        <result property="gmtCreate" column="gmt_create"/>
+        <result property="gmtModified" column="gmt_modified"/>
+    </resultMap>
+
+
+</mapper>

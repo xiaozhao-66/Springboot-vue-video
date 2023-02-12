@@ -1,0 +1,115 @@
+
+
+.dialog__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  margin: 0;
+}
+
+.dialog {
+  -webkit-overflow-scrolling: touch;
+  top: 150px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  -webkit-background-clip: content;
+  border-radius: 2px;
+  box-shadow: 1px 1px 50px rgba(0, 0, 0, .3);
+  position: fixed;
+  _position: absolute;
+  pointer-events: auto;
+
+  &.dialog__center{
+    .dialog_body, .dialog_foote{
+      text-align: center;
+    }
+  }
+
+
+  .dialog_head {
+    padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0;
+    text-align: left;
+    .dialog_title, &.dialog_title {
+
+    }
+    .dialog_header_group{
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 16px;
+      line-height: initial;
+      text-align: left;
+    }
+    .dialog_header_btn {
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      position: relative;
+      _overflow: hidden;
+      display: inline-block;
+      *display: inline;
+      *zoom: 1;
+      vertical-align: top;
+      color: #959595;
+      &:hover {
+        color: #409eff;
+      }
+    }
+  }
+  .dialog_body {
+    padding: 5px;
+    color: #606266;
+    font-size: 14px;
+    word-break: break-all;
+    &.dialog_content {
+      position: relative;
+      overflow: auto;
+    }
+  }
+  .dialog_foote {
+    padding: 5px 10px 10px 10px ;
+    text-align: right;
+    box-sizing: border-box;
+    .dialog-footer {
+      box-sizing: border-box;
+    }
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+button, input, optgroup, option, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  outline: 0;
+}
+
+
+
+.dialog-fade-enter-active {
+  animation: bounceIn .3s;
+}
+
+.dialog-fade-leave-active {
+  animation: bounceOut .3s;
+}
+
